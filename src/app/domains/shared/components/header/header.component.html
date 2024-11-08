@@ -84,8 +84,8 @@
     <div>
         @for(product of cart(); track $index){
             <div class="grid grid-cols-2 my-2 h-30  bg-slate-200 border border-black rounded" >
-                <div class="w-12">
-                    <img src="{{product.image}}" alt="{{product.title}}">
+                <div class="w-13">
+                    <img class="h-full" src="{{product.image}}" alt="{{product.title}}">
                 </div>
                 <div>
                     <strong><p>{{product.title}}</p></strong>

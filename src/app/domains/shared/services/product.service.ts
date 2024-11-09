@@ -15,4 +15,8 @@ export class ProductService {
   getProducts() {
     return this.http.get<Product[]>(this.urlApi)
   }
+
+  getOne(id: string) {
+    return this.http.get<Product>(`https://fakestoreapi.com/products/${id}`)
+  }
 }
